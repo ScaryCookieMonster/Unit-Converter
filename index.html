@@ -12,26 +12,31 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
-  <!-- Hero Section -->
-  <section id="hero">
-    <h1 id="title">Metric/Imperial Unit Conversion</h1>
-    <input type="text" id="input-el" />
-    <button id="button-el">Convert</button>
-  </section>
-  <!-- Converted Result -->
-  <section id="conversion">
-    <section class="result-container" id="meter/feet">
-      <h1 class="measurements">Length (Meter/Feet)</h1>
-      <p class="results"></p>
+  <body>
+    <!-- Hero Section -->
+    <section id="hero">
+      <h1 id="title">Metric/Imperial Unit Conversion</h1>
+      <input type="text" id="input-el" />
+      <button id="button-el">Convert</button>
     </section>
-    <section class="result-container" id="liters/gallons">
-      <h1 class="measurements">Volume (Liters/Gallons)</h1>
-      <p class="results"></p>
+    <!-- Converted Result -->
+    <section id="conversion">
+        <!-- Section 1 -->
+      <section class="result-container" id="meter/feet">
+        <h1 class="measurements">Length (Meter/Feet)</h1>
+        <div id="lengthResults"></div>
+      </section>
+      <!-- Section 2 -->
+      <section class="result-container" id="liters/gallons">
+        <h1 class="measurements">Volume (Liters/Gallons)</h1>
+        <div id="volumeResults"></div>
+      </section>
+      <!-- Section 3 -->
+      <section class="result-container" id="kilograms/pounds">
+        <h1 class="measurements">Mass (Kilograms/Pounds)</h1>
+        <div id="massResults"></div>
+      </section>
     </section>
-    <section class="result-container" id="kilograms/pounds">
-      <h1 class="measurements">Mass (Kilograms/Pounds)</h1>
-      <p class="results"></p>
-    </section>
-  </section>
+      <script src="main.js"></script>
+  </body>
 </html>
